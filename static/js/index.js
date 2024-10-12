@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const items = document.querySelectorAll('.item5');
 
   // 定义汉字数组
-  const labels = ["🗻Anechoic room", "🛋️Reverberating space"];
+  const labels = ["🗻Anechoic space", "🛋️Reverberating space"];
 
   function updateVideoDisplay() {
     const index = slider.value - 1; // 获取当前滑块值并转换为零基索引
