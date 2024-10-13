@@ -157,6 +157,8 @@ document.addEventListener('DOMContentLoaded', function() {
         targetClass = '.container-select-visual';
       } else if (targetId.includes('-imagehear')) {
         targetClass = '.container-select-imagehear';
+      } else if (targetId.includes('-t2a')) {
+        targetClass = '.container-select-t2a';
       } else {
         targetClass = '.container-select';
       }
@@ -175,8 +177,11 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (targetId.includes('-imagehear')) {
         document.querySelectorAll('[data-target*="-imagehear"]').forEach(b => b.classList.replace('is-dark', 'is-light'));
         this.classList.replace('is-light', 'is-dark');
+      } else if (targetId.includes('-t2a')) {
+        document.querySelectorAll('[data-target*="-t2a"]').forEach(b => b.classList.replace('is-dark', 'is-light'));
+        this.classList.replace('is-light', 'is-dark');
       } else {
-        document.querySelectorAll('button:not([data-target*="-visual"], [data-target*="-imagehear"])').forEach(b => b.classList.replace('is-dark', 'is-light'));
+        document.querySelectorAll('button:not([data-target*="-visual"], [data-target*="-imagehear"], [data-target*="-t2a"])').forEach(b => b.classList.replace('is-dark', 'is-light'));
         this.classList.replace('is-light', 'is-dark');
       }
     });
@@ -187,6 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('container1-visual').style.display = 'block';
   // Assuming there is a default container for the 'imagehear' category as well
   document.getElementById('container1-imagehear').style.display = 'block';
+  document.getElementById('container1-t2a').style.display = 'block';
 });
 
 $(document).ready(function() {

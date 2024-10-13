@@ -76,6 +76,9 @@
     .container-select-imagehear {
       display: none; /* Initially hide all containers */
     }
+    .container-select-t2a {
+      display: none; /* Initially hide all containers */
+    }
     #slider {
       max-width: 300px;
       margin: auto;
@@ -789,7 +792,8 @@
   </div>
 </section>
 
-<h2 class="title is-3 has-text-centered">T2A Generated Examples</h2>
+<h2 class="title is-3 has-text-centered">Text Guided Generation (2-C Audio)</h2>
+<h2 class="content has-text-centered" style="color: gray;">Cooresponding to Tab.3 in our paper.</h2>
   <div class="columns is-centered">
     <h2 class="title is-4"></h2>
     <button class="button is-dark" data-target="container1">SpatialSonic (Ours)</button>
@@ -801,7 +805,7 @@
     <div class="container is-max-desktop container-select" id="container1">
       <div class="columns is-centered">
         <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">SS-set</h2>
+          <h2 class="title is-5 has-text-centered">SS-set <p style="font-size: 9pt; color: gray;">Single Stationary</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>A train on the left blows its horn and rings its bells, accompanied by vibrations.</p>
@@ -811,7 +815,7 @@
           </audio>
         </div>
         <div class="column is-one-forth has-text-centered">
-          <p>A man speaks as birds chirp and dogs bark, with the objects directly in front.</p>
+          <p>A man speaks as birds chirp and dogs bark, with the objects directly in front.</p>   
           <audio controls style="width: 100%;">
             <source src="./static/T2A_audios/9b4d6b4f1d57b7fcbb2324daf33c7740_ours.wav" type="audio/wav">
             Your browser does not support the audio element.
@@ -830,7 +834,7 @@
     
       <div class="columns is-centered">
         <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">SD-set</h2>
+          <h2 class="title is-5 has-text-centered">SD-set <p style="font-size: 9pt; color: gray;">Single Dynamic</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>A fire truck siren blasts from the right to the front left slowly.</p>
@@ -859,7 +863,7 @@
     
       <div class="columns is-centered">
         <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">DS-set</h2>
+          <h2 class="title is-5 has-text-centered">DS-set <p style="font-size: 9pt; color: gray;">Double Stationary</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>The dog barking is on the left side, while a boat engine is running on the right side.</p>
@@ -883,13 +887,42 @@
           </audio>
         </div>
       </div>
+
+      <hr>
+    
+      <div class="columns is-centered">
+        <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
+          <h2 class="title is-5 has-text-centered">M-set <p style="font-size: 9pt; color: gray;">Mixed</p></h2>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>A motor with a drum music and man speaking is moving from left to right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix_1_ours.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>Sound of the bird chirping, dog barking are on the left, while water is splashing on the right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix_2_ours.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>A man is speaking on the right, and horse hoofbeats are from left to right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix_3_ours.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
     </div>
 
     <!-- Container 2 -->
     <div class="container is-max-desktop container-select" id="container2">
       <div class="columns is-centered">
         <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">SS-set</h2>
+          <h2 class="title is-5 has-text-centered">SS-set <p style="font-size: 9pt; color: gray;">Single Stationary</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>A train on the left blows its horn and rings its bells, accompanied by vibrations. </p>
@@ -918,7 +951,7 @@
 
       <div class="columns is-centered">
         <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">SD-set</h2>
+          <h2 class="title is-5 has-text-centered">SD-set <p style="font-size: 9pt; color: gray;">Single Dynamic</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>A fire truck siren blasts from the right to the front left slowly. </p>
@@ -947,7 +980,7 @@
 
       <div class="columns is-centered">
         <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">DS-set</h2>
+          <h2 class="title is-5 has-text-centered">DS-set <p style="font-size: 9pt; color: gray;">Double Stationary</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>The dog barking is on the left side, while a boat engine is running on the right side.</p>
@@ -971,13 +1004,42 @@
           </audio>
         </div>
       </div>
+
+      <hr>
+    
+      <div class="columns is-centered">
+        <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
+          <h2 class="title is-5 has-text-centered">M-set <p style="font-size: 9pt; color: gray;">Mixed</p></h2>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>A motor with a drum music and man speaking is moving from left to right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix1_filter.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>Sound of the bird chirping, dog barking are on the left, while water is splashing on the right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix2_filter.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>A man is speaking on the right, and horse hoofbeats are from left to right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix3_filter.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
     </div>
 
     <!-- Container 3 -->
     <div class="container is-max-desktop container-select" id="container3">
       <div class="columns is-centered">
         <div class="column is-one-quarter has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">SS-set</h2>
+          <h2 class="title is-5 has-text-centered">SS-set <p style="font-size: 9pt; color: gray;">Single Stationary</p></h2>
         </div>
         <div class="column is-one-quarter has-text-centered">
           <p>A train on the left blows its horn and rings its bells, accompanied by vibrations. </p>
@@ -1006,7 +1068,7 @@
     
       <div class="columns is-centered">
         <div class="column is-one-quarter has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">SD-set</h2>
+          <h2 class="title is-5 has-text-centered">SD-set <p style="font-size: 9pt; color: gray;">Single Dynamic</p></h2>
         </div>
         <div class="column is-one-quarter has-text-centered">
           <p>A fire truck siren blasts from the right to the front left slowly. </p>
@@ -1035,7 +1097,7 @@
     
       <div class="columns is-centered">
         <div class="column is-one-quarter has-text-centered" style="display: flex; align-items: center; justify-content: center;">
-          <h2 class="title is-5 has-text-centered">DS-set</h2>
+          <h2 class="title is-5 has-text-centered">DS-set <p style="font-size: 9pt; color: gray;">Double Stationary</p></h2>
         </div>
         <div class="column is-one-forth has-text-centered">
           <p>The dog barking is on the left side, while a boat engine is running on the right side.</p>
@@ -1059,10 +1121,40 @@
           </audio>
         </div>
       </div>
+
+      <hr>
+    
+      <div class="columns is-centered">
+        <div class="column is-one-forth has-text-centered" style="display: flex; align-items: center; justify-content: center;">
+          <h2 class="title is-5 has-text-centered">M-set <p style="font-size: 9pt; color: gray;">Mixed</p></h2>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>A motor with a drum music and man speaking is moving from left to right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix1_open.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>Sound of the bird chirping, dog barking are on the left, while water is splashing on the right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix2_open.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-forth has-text-centered">
+          <p>A man is speaking on the right, and horse hoofbeats are from left to right.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios/mix3_open.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
     </div>
   </section>
 
-  <h2 class="title is-3 has-text-centered">Visually Guided Generated Examples</h2>
+  <h2 class="title is-3 has-text-centered">Visually Guided Generation (2-C Audio)</h2>
+  <h2 class="content has-text-centered" style="color: gray;">Cooresponding to Tab.4 and Tab.5 in our paper.</h2>  
     <div class="columns is-centered">
       <h2 class="title is-4"></h2>
       <button class="button is-dark" data-target="container1-visual">SpatialSonic (Ours)</button>
@@ -1393,7 +1485,323 @@
       </div>
     </section>
 
-    <h2 class="title is-3 has-text-centered">ImageHear Examples</h2>
+
+    <h2 class="title is-3 has-text-centered">Text Guided Generation (1-C Audio)</h2>
+    <h2 class="content has-text-centered" style="color: gray;">Cooresponding to Tab.2 in our paper.</h2>
+    <div class="columns is-centered">
+      <h2 class="title is-4"></h2>
+      <button class="button is-dark" data-target="container1-t2a">SpatialSonic (Ours)</button>
+      <button class="button is-light" data-target="container2-t2a">AudioLDM2 (Mono-Audio)</button>
+      <button class="button is-light" data-target="container3-t2a">Tango2 (Mono-Audio)</button>
+      <button class="button is-light" data-target="container4-t2a">Make-An-Audio 2 (Mono-Audio)</button>
+    </div class="columns is-centered">
+    <section class="section wrapper">
+      <!-- Container 1 -->
+      <div class="container is-max-desktop container-select-t2a" id="container1-t2a">
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>Pigeons coo and rustle.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y_BSmz3SEW1w_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>Tick-tocking by a clock.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y3wV3ST-c4PE_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A person is snoring steadily.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y3XcIVh40pTI_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>An audience clapping.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5eSRL3PRHzo_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A woman is speaking while food is frying and sizzling.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5G6b_QWL3nY_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A nearby insect buzzes with nearby vibrations.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5YzNSjmZ3Wg_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>Footsteps then a woman speaks followed by a door clanging.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y8ZH_PoK0clI_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A man and a woman talking then the crinkling of paper.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y9PN4gyxpH2M_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A medium-pitched, metal bell is ringing.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y7D7xgd4WJ50_ours_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Container 2 -->
+      <div class="container is-max-desktop container-select-t2a" id="container2-t2a">
+        <!-- <h2 class="content has-text-centered" style="font-size: smaller; color: gray;">Applying a filter to convert mono-audio into stereo audio results in decreased quality and channel-wise bias.</h2> -->
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>Pigeons coo and rustle.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y_BSmz3SEW1w_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>Tick-tocking by a clock.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y3wV3ST-c4PE_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A person is snoring steadily.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y3XcIVh40pTI_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>An audience clapping.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5eSRL3PRHzo_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A woman is speaking while food is frying and sizzling.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5G6b_QWL3nY_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A nearby insect buzzes with nearby vibrations.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5YzNSjmZ3Wg_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>Footsteps then a woman speaks followed by a door clanging.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y8ZH_PoK0clI_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A man and a woman talking then the crinkling of paper.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y9PN4gyxpH2M_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A medium-pitched, metal bell is ringing.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y7D7xgd4WJ50_audioldm2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Container 3 -->
+      <div class="container is-max-desktop container-select-t2a" id="container3-t2a">
+      <!-- <h2 class="content has-text-centered" style="font-size: smaller; color: gray;">Although See-2-Sound is primarily designed for spatial environmental sounds, we also identify some I2A capabilities within it and have included it in our comparison as one of the few existing works in this area. </h2> -->
+      <div class="columns is-centered">
+        <div class="column is-one-third has-text-centered">
+          <p>Pigeons coo and rustle.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y_BSmz3SEW1w_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <p>Tick-tocking by a clock.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y3wV3ST-c4PE_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <p>A person is snoring steadily.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y3XcIVh40pTI_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <hr>
+      <div class="columns is-centered">
+        <div class="column is-one-third has-text-centered">
+          <p>An audience clapping.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y5eSRL3PRHzo_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <p>A woman is speaking while food is frying and sizzling.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y5G6b_QWL3nY_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <p>A nearby insect buzzes with nearby vibrations.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y5YzNSjmZ3Wg_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <hr>
+      <div class="columns is-centered">
+        <div class="column is-one-third has-text-centered">
+          <p>Footsteps then a woman speaks followed by a door clanging.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y8ZH_PoK0clI_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <p>A man and a woman talking then the crinkling of paper.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y9PN4gyxpH2M_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <p>A medium-pitched, metal bell is ringing.</p>
+          <audio controls style="width: 100%;">
+            <source src="./static/T2A_audios_1C/Y7D7xgd4WJ50_tangle2_audiocaps_final.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      </div>
+
+      <!-- Container 4 -->
+      <div class="container is-max-desktop container-select-t2a" id="container4-t2a">
+        <!-- <h2 class="content has-text-centered" style="font-size: smaller; color: gray;">Although See-2-Sound is primarily designed for spatial environmental sounds, we also identify some I2A capabilities within it and have included it in our comparison as one of the few existing works in this area. </h2> -->
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>Pigeons coo and rustle.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y_BSmz3SEW1w_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>Tick-tocking by a clock.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y3wV3ST-c4PE_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A person is snoring steadily.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y3XcIVh40pTI_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>An audience clapping.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5eSRL3PRHzo_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A woman is speaking while food is frying and sizzling.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5G6b_QWL3nY_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A nearby insect buzzes with nearby vibrations.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y5YzNSjmZ3Wg_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        <hr>
+        <div class="columns is-centered">
+          <div class="column is-one-third has-text-centered">
+            <p>Footsteps then a woman speaks followed by a door clanging.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y8ZH_PoK0clI_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A man and a woman talking then the crinkling of paper.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y9PN4gyxpH2M_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <p>A medium-pitched, metal bell is ringing.</p>
+            <audio controls style="width: 100%;">
+              <source src="./static/T2A_audios_1C/Y7D7xgd4WJ50_maa2_audiocaps_final.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <h2 class="title is-3 has-text-centered">Visual Guided Generation (1-C Audio)</h2>
+    <h2 class="content has-text-centered" style="color: gray;">Cooresponding to Tab.G18 in the appendix.</h2>
     <div class="columns is-centered">
       <h2 class="title is-4"></h2>
       <button class="button is-dark" data-target="container1-imagehear">SpatialSonic (Ours)</button>
@@ -1648,6 +2056,52 @@
                     </p>
                     <audio controls style="width: 90%;">
                       <source src="./static/slide_audios/baby_large.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero is-small">
+        <div class="hero-body">
+          <div class="container">
+            <h2 class="title is-5">When Percise Description Meets Direction</h2>
+            <!-- <div id="slider" class="slider has-output">
+              <output id="sliderOutput6">Moving State: Maintained Directions</output>
+              <input id="videoSlider6" type="range" min="1" max="2" value="1" class="slider">
+            </div> -->
+            <h2 class="content has-text-centered">Humans are <b>not sensitive</b> to minor changes in the direction. </h2>
+            <div id="videos-container6">
+              <!-- Video items -->
+              <div class="item6 item-steve">
+                <div class="columns is-centered">
+                  <div class="column is-one-third has-text-centered">
+                    <p>
+                      A man is snoring from 60° right Ahead.
+                    </p>
+                    <audio controls style="width: 90%;">
+                      <source src="./static/slide_audios/snoring_right.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <div class="column is-one-third has-text-centered">
+                    <p>
+                      Exciting bass rock music from 30° Left Ahead.
+                    </p>
+                    <audio controls style="width: 90%;">
+                      <source src="./static/slide_audios/bass_left.wav" type="audio/wav">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
+                  <div class="column is-one-third has-text-centered">
+                    <p>
+                      Whistling can be heard from 60° to the left of straight ahead.
+                    </p>
+                    <audio controls style="width: 90%;">
+                      <source src="./static/slide_audios/whisle_left.wav" type="audio/wav">
                       Your browser does not support the audio element.
                     </audio>
                   </div>
